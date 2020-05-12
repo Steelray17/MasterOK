@@ -26,16 +26,13 @@ namespace MasterOK
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            //если логин и пароль пустые
             if (textBoxLogin.Text == "" && textBoxPassword.Text == "")
             {
                 MessageBox.Show("Введите данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            //если логин и пароль ввели
             else
             {
                 bool key = false;
-                //
                 foreach (Users user in Program.master.Users)
                 {
                     if (textBoxLogin.Text == user.Login && textBoxPassword.Text == user.Password)
@@ -46,15 +43,12 @@ namespace MasterOK
                         users.type = user.Type;
                     }
                 }
-
-                //
                 if (!key)
                 {
                     MessageBox.Show("Проверьте данные", "Пользователь не найден", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     textBoxLogin.Text = "";
                     textBoxPassword.Text = "";
                 }
-                //
                 else
                 {
                     MessageBox.Show("Данные введены верно", "Пользователь найден", MessageBoxButtons.OK, MessageBoxIcon.Information);

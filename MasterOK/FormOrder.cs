@@ -51,12 +51,9 @@ namespace MasterOK
         }
         void ShowOrderSet()
         {
-            //Предварительно очищаем все listView
             listViewOrders.Items.Clear();
-            //Проходим по коллекции клиентов, которые находятся в базе
             foreach (OrderSet orderSet in Program.master.OrderSet)
             {
-                //создадим новый элемент в listView с помощью массива строк
                 ListViewItem item = new ListViewItem(new string[]
                 {
                     orderSet.ClientsSet.LastName+" "+orderSet.ClientsSet.FirstName+" "+orderSet.ClientsSet.MiddleName,
@@ -64,9 +61,7 @@ namespace MasterOK
                     orderSet.ProductSet.NameProduct,
                     orderSet.Date
                 }) ;
-                //Указываем по какому тегу выбраны элементы
                 item.Tag = orderSet;
-                //Добавляем элементы в listViewSupplySet для отображения
                 listViewOrders.Items.Add(item);
             }
             listViewOrders.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
