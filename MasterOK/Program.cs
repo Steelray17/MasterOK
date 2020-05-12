@@ -8,6 +8,7 @@ namespace MasterOK
 {
     static class Program
     {
+        public static MasterOKEntities1 master = new MasterOKEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,7 @@ namespace MasterOK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormAuthorization());
         }
     }
 }

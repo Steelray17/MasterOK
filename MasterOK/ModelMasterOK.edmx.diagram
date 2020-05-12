@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0d30c655bcae4e33bb00523402db33f4" Name="Diagram1" ZoomLevel="75">
+        <EntityTypeShape EntityType="MasterOKModel.ClientsSet" Width="1.5" PointX="1.375" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterOKModel.EmployeeSet" Width="1.5" PointX="4.875" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterOKModel.OrderSet" Width="1.5" PointX="4.875" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterOKModel.ProductSet" Width="1.5" PointX="1.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterOKModel.ProviderSet" Width="1.5" PointX="7.5" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterOKModel.Users" Width="1.5" PointX="7.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterOKModel.WarehouseSet" Width="1.5" PointX="4.875" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="MasterOKModel.FK_OrderSet_ClientsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterOKModel.FK_OrderSet_EmployeeSet" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterOKModel.FK_OrderSet_ProductSet" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterOKModel.FK_WarehouseSet_ProductSet" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterOKModel.FK_WarehouseSet_ProviderSet" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
